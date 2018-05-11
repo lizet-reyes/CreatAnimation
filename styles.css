@@ -7,8 +7,17 @@
 }
 
 #animation1 {
-  width: 100px;
+  width: 1000px;
   height: 100px;
+  position: absolute;
+  background:  transparent;
+  top:0px;
+  left: 0px;
+}
+
+#animation2 {
+  width: 500px;
+  height: 150px;
   position: absolute;
   background:  transparent;
   top: 0px;

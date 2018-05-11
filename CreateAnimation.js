@@ -18,3 +18,22 @@ function frame() {
     box.style.top = ypos + 'px';
     box.style.left = xpos + 'px';
 }
+
+var box = document.getElementById("animation2");
+var xpos = 0;
+
+var xstep = 1;
+
+var id = setInterval(frame, 5);
+
+function frame() {
+    if (xpos > 350 || xpos < 0) {
+        xstep = -xstep;
+    }
+
+
+    xpos = xpos + xstep;
+
+
+    box.style.left = xpos + 'px';
+}
