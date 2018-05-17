@@ -7,32 +7,58 @@
 }
 
 #animation1 {
-  width: 1000px;
-  height: 100px;
-  position: absolute;
-  background:  transparent;
-  top:0px;
-  left: 0px;
-}
-
-#animation2 {
   width: 500px;
   height: 150px;
   position: absolute;
   background:  transparent;
-  top: 0px;
-  left: 0px;
+
+}
+
+#animation2 {
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  background: purple;
+}
+
+#animation3 {
+  width: 70px;
+  height: 50px;
+  position: absolute;
 }
 
 
 
-var id = setInterval(frame, 5);
 
-function frame() {
-    if ( /* test for finished */ ) {
-        clearInterval(id);
-    }
-    else {
-        /* code to change the element style */
-    }
+
+@keyframes example {
+    0%   {background-color: purple;}
+    50%  {background-color: lightblue;}
+    100% {background-color: brown;}
 }
+
+
+#animation2 {
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes example2 {
+    0%   {background-color: red;}
+    25%  {background-color: brown;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+
+
+#animation3 {
+    animation-name: example2;
+    animation-duration: 10s;
+     animation-iteration-count: infinite;
+
+}
+
+
