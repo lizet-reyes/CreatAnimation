@@ -1,3 +1,25 @@
+var thing = document.getElementById("animation2");
+var container = document.getElementById("container");
+var mousecoords = document.getElementById("mousecoords");
+
+container.addEventListener("mousemove", printMouseCoords);
+
+function printMouseCoords(event) {
+    var mouseX = event.clientX;
+    var mouseY = event.clientY;
+    mousecoords.textContent = mouseX + ", " + mouseY;
+}
+
+container.addEventListener("mousemove", moveThing);
+
+function moveThing(event) {
+    var xPosition = event.clientX - container.getBoundingClientRect().left - (thing.clientWidth / 2);
+	var yPosition = event.clientY - container.getBoundingClientRect().top - (thing.clientHeight / 2);
+	// in case of a wide border, the boarder-width needs to be considered in the formula above
+	thing.style.left = xPosition + "px";
+	thing.style.top = yPosition + "px";
+}
+
 var box1 = document.getElementById("animation1");
 var xpos1 = 0;
 var ypos1 = 0;
@@ -15,7 +37,7 @@ var xpos3 = 0;
 var ypos3 = 200;
 var xstep3 = 3;
 var ystep3 = 2;
-var id = setInterval(frame, 15);
+var id = setInterval(frame, 25);
 
 function frame() {
 

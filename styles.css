@@ -3,6 +3,7 @@
   height: 900px;
   position: relative;
   background:  palevioletred;
+  cursor: pointer;
 
 }
 
@@ -12,7 +13,16 @@
   position: absolute;
   background:  transparent;
   border: 3px yellow solid;
+  transition: transform .5s, background 10s;
 
+}
+
+#animation1:hover {
+    background-color: aqua;
+}
+
+#animation1:active{
+    transform: scale(2);
 }
 
 #animation2 {
