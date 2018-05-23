@@ -31,6 +31,7 @@
   position: absolute;
   background: purple;
   border: 2px black solid;
+  transition: transform .2s, background .5s, left .5s ease-out, top .5s ease-out;
 
 }
 

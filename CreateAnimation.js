@@ -20,6 +20,22 @@ function moveThing(event) {
 	thing.style.top = yPosition + "px";
 }
 
+var thing2 = document.getElementById("animation3");
+window.addEventListener("keyDown", function (event){
+if (event.key === "ArrowDown"){
+        thing2.style.background = "blue";
+    } else if (event.key === "ArrowLeft") {
+        thing2.style.background = "orange";
+    }else if (event.key === "ArrowRight") {
+        thing2.style.background = "black";
+    } else if (event.key === "ArrowUp") {
+        thing2.style.background = "violet";
+    }  else {
+        thing2.style.background = "green";
+    }
+}
+                        );
+
 var box1 = document.getElementById("animation1");
 var xpos1 = 0;
 var ypos1 = 0;
