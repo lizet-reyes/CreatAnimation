@@ -7,10 +7,11 @@
 }
 
 #animation1 {
-  width: 500px;
-  height: 150px;
+  width: 420px;
+  height: 90px;
   position: absolute;
   background:  transparent;
+  border: 3px yellow solid;
 
 }
 
@@ -19,12 +20,16 @@
   height: 50px;
   position: absolute;
   background: purple;
+  border: 2px black solid;
+
 }
 
 #animation3 {
   width: 70px;
   height: 50px;
   position: absolute;
+  border: 2px black solid;
+
 }
 
 
