@@ -47,13 +47,6 @@ function frame() {
     }
 
 
-    if (xpos2 > 350 || xpos2 < 0) {
-        xstep2 = -xstep2;
-    }
-    if (ypos2 > 600 || ypos2 < 0) {
-        ystep2 = -ystep2;
-    }
-
     if (xpos3 > 350 || xpos3 < 0) {
         xstep3 = -xstep3;
     }
@@ -65,10 +58,7 @@ function frame() {
     box1.style.left = xpos1 + 'px';
 
 
-    xpos2 = xpos2 + xstep2;
-    ypos2 = ypos2 + ystep2;
-    box2.style.top = ypos2 + 'px';
-    box2.style.left = xpos2 + 'px';
+
 
      xpos3 = xpos3 + xstep3;
     ypos3 = ypos3 + ystep3;
